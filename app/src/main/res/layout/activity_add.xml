@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Written by Aashritha Ananthula for CS6326.001, assignment 4, starting April 22, 2023.
+  NetID: axa180116
+  Description: This file contains the UI layout the the add screen that
+  contains the text fields where users can type in name and date fields-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add High Score"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Player Name"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:endIconDrawable="@drawable/baseline_check_circle_24"
+        app:endIconMode="custom"
+        app:errorEnabled="true"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:startIconDrawable="@drawable/baseline_person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_playername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="25" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_check_circle_24"
+
+        android:layout_marginTop="8dp"
+        android:hint="Score"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:startIconDrawable="@drawable/baseline_insert_chart_outlined_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:endIconMode="custom"
+        app:helperText="Required*"
+        app:endIconDrawable="@drawable/baseline_check_circle_24"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:startIconDrawable="@drawable/baseline_calendar_month_24"
+        >
+
+        <com.vicmikhailau.maskededittext.MaskedEditText
+            android:id="@+id/edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:hint="Date"
+            app:mask="##/##/#### ##:##"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="25dp"
+        android:enabled="false"
+        android:id="@+id/buttonConfirm"
+        android:textSize="25dp"/>
+
+</LinearLayout>
