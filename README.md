@@ -32,4 +32,8 @@ Welcome to Balloon Popper, a fast-paced, engaging game designed to offer players
 - **Custom View:** A Custom view that manages the game's visual aspects, occupying the bottom two-thirds of the game activity screen. It handles tasks such as recalculating balloon positions, counting down the timer, activating the heat sensor, and processing user interactions.
 - **Score Board (AddActivity Class):** This activity allows users to input and submit their scores to the scoreboard. It features real-time validation of the player name, score, and date inputs. The submit button is dynamically enabled or disabled based on the validity of the inputs. Upon submission, a player object containing these details is created and transferred to the main screen for inclusion in the scoreboard. This class is designed without direct file operation capabilities.
 
+
 ## Sample Run Below
+https://github.com/aashritha2001/BalloonPopper_Game/assets/75947163/a598b83a-c6c7-44b0-9d01-49eda6e7a531
+
+<img width="532" alt="Screenshot 2024-03-04 at 6 25 31 PM" src="https://github.com/aashritha2001/BalloonPopper_Game/assets/75947163/421523cd-706c-46e4-8904-32ba9161e992">
